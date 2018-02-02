@@ -13,12 +13,12 @@
         <repository>
             <id>release</id>
             <name>Release Repository</name>
-            <url>http://ip/nexus/content/repositories/releases</url>
+            <url>http://127.0.0.1:8082/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>snapshot</id>
             <name>Snapshot Repository</name>
-            <url>http://ip/nexus/content/repositories/snapshots</url>
+            <url>http://127.0.0.1:8082/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
