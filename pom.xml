@@ -8,18 +8,13 @@
     <artifactId>ZKBase</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-    <dependencies>
-
-        <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
-        <dependency>
-            <groupId>org.dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-
-    </dependencies>
-
+    <repositories>
+        <repository>
+            <id>nexus-snapshots</id>
+            <name>nexus Snapshots</name>
+            <url>http://127.0.0.1:8081/repository/maven-snapshots</url>
+        </repository>
+    </repositories>
 
     <!-- 上传jar包到私服 -->
     <distributionManagement>
@@ -36,6 +31,20 @@
             <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+    
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+
+    </dependencies>
+
+
+
 
 
 </project>
