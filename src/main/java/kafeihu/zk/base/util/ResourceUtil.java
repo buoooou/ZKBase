@@ -25,8 +25,7 @@ public class ResourceUtil {
         if (null == SysDataRoot)
         {
             // 如果未指定app.dataroot属性，取user.dir属性
-            SysDataRoot = System.getProperty("user.dir") + File.separator + "dataroot"
-                    + File.separator;
+            SysDataRoot = System.getProperty("user.dir") + File.separator;
         }
         else
         {
